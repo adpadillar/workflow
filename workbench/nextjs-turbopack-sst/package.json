@@ -1,0 +1,43 @@
+{
+  "name": "nextjs-turbopack-sst",
+  "version": "0.0.2-alpha.5",
+  "private": true,
+  "scripts": {
+    "build": "next build --turbopack",
+    "clean": "rm -rf .next .swc app/.well-known/workflow",
+    "dev": "next dev --turbopack",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "2.0.76",
+    "@aws-sdk/client-scheduler": "^3.917.0",
+    "@aws-sdk/client-sqs": "^3.917.0",
+    "@node-rs/xxhash": "1.7.6",
+    "@opentelemetry/api": "^1.9.0",
+    "@vercel/otel": "^1.13.0",
+    "@workflow/ai": "workspace:*",
+    "@workflow/world-sst": "workspace:*",
+    "ai": "catalog:",
+    "aws-lambda": "^1.0.7",
+    "lodash.chunk": "^4.2.0",
+    "next": "15.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "sst": "3.17.21",
+    "workflow": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/aws-lambda": "^8.10.156",
+    "@types/lodash.chunk": "^4.2.9",
+    "@types/node": "catalog:",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "sst": "^3.17.21",
+    "tailwindcss": "^4",
+    "typescript": "catalog:"
+  }
+}
